@@ -4,41 +4,250 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Página Principal</title>
+    <title>Monte Sião - myWikipédia</title>
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
-
-    <div>   
-        <div class="logo">
-            <img src="assets/images/logo.png" width="200"/>
+   
+    <header>
+        <div class="container">
+            <div class="nav">   
+                <nav>
+                    <ul class="menu" aria-hidden>
+                        <li><a href="https://pt.wikipedia.org/"> Página principal </a></li>
+                        <li><a href="https://pt.wikipedia.org/wiki/Portal:Conte%C3%BAdo_destacado"> Conteúdo destacado </a></li>
+                        <li><a href="https://pt.wikipedia.org/wiki/Portal:Eventos_atuais"> Eventos atuais </a></li>
+                        <li><a href="#"> Portais </a></li>
+                        <li><a href="#"> Informar um erro </a></li>
+                        <li class="title"> Colaboração </li>
+                        <li><a href="#"> Boas-vindas </a></li>
+                        <li><a href="#"> Ajuda </a></li>
+                        <li><a href="#"> Página de testes </a></li>
+                        <li><a href="#"> Portal comunitário </a></li>
+                        <li><a href="#"> Mudanças recentes </a></li>
+                        <li><a href="#"> Manutenção </a></li>
+                    </ul>
+                </nav>  
+                <button class="hamburger" aria-expanded="false" title="Menu">
+                    <svg class="menuIcon" stroke="currentColor" fill="none" stroke-width="0" viewBox="0 0 15 15" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M1.5 3C1.22386 3 1 3.22386 1 3.5C1 3.77614 1.22386 4 1.5 4H13.5C13.7761 4 14 3.77614 14 3.5C14 3.22386 13.7761 3 13.5 3H1.5ZM1 7.5C1 7.22386 1.22386 7 1.5 7H13.5C13.7761 7 14 7.22386 14 7.5C14 7.77614 13.7761 8 13.5 8H1.5C1.22386 8 1 7.77614 1 7.5ZM1 11.5C1 11.2239 1.22386 11 1.5 11H13.5C13.7761 11 14 11.2239 14 11.5C14 11.7761 13.7761 12 13.5 12H1.5C1.22386 12 1 11.7761 1 11.5Z" fill="currentColor"></path></svg>
+                    <svg class="closeIcon" stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path fill="none" stroke="#000" stroke-width="2" d="M3,3 L21,21 M3,21 L21,3"></path></svg>
+                </button>
+                <a href="#" class="logo">
+                    <img src="assets/images/logo.png" width="200" alt="Logotipo"/>
+                </a>
+            </div>
+    
+            <div id="search">
+                <button type="submit" title="Enviar">
+                    <svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round" xmlns="http://www.w3.org/2000/svg"><circle cx="11" cy="11" r="8"></circle><line x1="21" x2="16.65" y1="21" y2="16.65"></line></svg>
+                </button>
+                <input type="text" placeholder="Buscar" title="Digite aqui para buscar" />
+            </div>
+            <div id="account">
+                <a href="#">
+                    Criar uma conta
+                </a>
+                <a href="#">
+                    Entrar
+                </a>
+                <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg"><path d="M858.5 763.6a374 374 0 0 0-80.6-119.5 375.63 375.63 0 0 0-119.5-80.6c-.4-.2-.8-.3-1.2-.5C719.5 518 760 444.7 760 362c0-137-111-248-248-248S264 225 264 362c0 82.7 40.5 156 102.8 201.1-.4.2-.8.3-1.2.5-44.8 18.9-85 46-119.5 80.6a375.63 375.63 0 0 0-80.6 119.5A371.7 371.7 0 0 0 136 901.8a8 8 0 0 0 8 8.2h60c4.4 0 7.9-3.5 8-7.8 2-77.2 33-149.5 87.8-204.3 56.7-56.7 132-87.9 212.2-87.9s155.5 31.2 212.2 87.9C779 752.7 810 825 812 902.2c.1 4.4 3.6 7.8 8 7.8h60a8 8 0 0 0 8-8.2c-1-47.8-10.9-94.3-29.5-138.2zM512 534c-45.9 0-89.1-17.9-121.6-50.4S340 407.9 340 362c0-45.9 17.9-89.1 50.4-121.6S466.1 190 512 190s89.1 17.9 121.6 50.4S684 316.1 684 362c0 45.9-17.9 89.1-50.4 121.6S557.9 534 512 534z"></path></svg>
+            </div>
         </div>
-    </div>
+    </header>
 
-    <div class="bar"></div>
 
-    <div class="content">
-        <div class="sidebar">
-            <h2>Título</h2>
-            <ul>
-                <li><a href="#">Links</a></li>
-            </ul>
+    <div class="container grid-2">
+       
+        <div class="navBar">
+           
+            <h2>Conteúdo</h2>
+            <nav>
+                <ul>
+                    <li><a href="#monte-siao">Inicio</a></li>
+                    <li><a href="#etimologia">Etimologia</a></li>
+                    <li><a href="#historia">História</a></li>
+                    <li><a href="#pontos-turisticos">Pontos turísticos</a></li>
+                    <li><a href="#arqueologia">Arqueologia</a></li>
+                    <li><a href="#ver-tambem">Ver também</a></li>
+                    <li><a href="#referencia">Referências</a></li>
+                </ul>
+            </nav>
+        
         </div>
-
-        <div class="main">
+        <main class="grid-Center">
             
-        </div>
+            <h1 id="monte-siao">Monte Sião</h1>
+            <span>Origem: Wikipédia, a enciclopédia livre.  </span>
+            <div class="img_Content">
+                <div class="title">
+                    <strong>Monte Sião</strong> <br/>
+                   <i><b>
+                     הַר צִיוֹן (Har Tziyyon) <br/>
+                    جبل صهيون (Jabel Sahyoun)  <br/>
+                    </b></i>
+                </div>
+                <figure>
+                    <img src="assets/images/monte-siao.JPG" title="Monte Sião" alt="Monte Sião visto do Hotel Monte Sião" />
+                    <figcaption>Monte Sião visto do Hotel Monte Sião</figcaption>
+                </figure>
 
-        <div class="anchors">
-            <h2>Neste Artigo</h2>
+                <figure>
+                    <img src="assets/images/mapa-monte-siao.png" title="Mapa Israel - Localização Monte Sião" alt="Mapa Israel - Localização Monte Sião" />
+                    <figcaption>Localização Monte Sião</figcaption>
+                </figure>
+                <div class="details">
+                    <div>
+                        <span class="name">Coordenadas</span>
+                        <span>31° 46' 18" N 35° 13' 43" E</span>
+                    </div>
+                    <div>
+                        <span class="name">Altitude</span>
+                        <span>765 m</span>
+                    </div>
+                    <div>
+                        <span class="name">Continente</span>
+                        <span>Ásia</span>
+                    </div>
+                    <div>
+                        <span class="name">Região geográfica</span>
+                        <span>Oriente Médio</span>
+                    </div>
+                    <div>
+                        <span class="name">Países</span>
+                        <span> Israel</span>
+                    </div>
+                    <div>
+                        <span class="name">Localidades mais próximas</span>
+                        <span>Jerusalém</span>
+                    </div>
+                </div>
+            </div>
+            <p>
+                <strong>Monte Sião</strong> (em hebraico: הַר צִיוֹן; romaniz.: Har Tsiyyon; em árabe: جبل صهيون; romaniz.: Jabel Sahyoun) é um monte em Jerusalém localizado bem ao lado da muralha da Cidade Antiga e historicamente associado ao Monte do Templo. O termo é frequentemente utilizado para designar a Terra de Israel.
+            </p>
+
+
+
+            <h2 id="etimologia">Etimologia</h2>
+            <p>
+                A etimologia da palavra "Sião" ("ṣiyyôn") é incerta.
+            </p>
+            <p>
+                Mencionado na Bíblia em II Samuel (II Samuel 5:7) como sendo o nome do local onde estava uma fortaleza jebusita conquistada pelo rei Davi, sua origem provavelmente é anterior à chegada dos antigos israelitas. Se for semítico, pode ser derivado da raiz hebraica "ṣiyyôn" ("castelo"), da árabe "ṣiyya" ("terra seca") ou ainda da árabe "šanā" ("proteger" ou "cidadela"). É possível que o termo também esteja relacionado à raiz árabe "ṣahî" ("subir até o topo") ou "ṣuhhay" ("torre" ou "o cume da montanha"). Uma relação não-semítica com a palavra hurriana "šeya" ("rio" ou "riacho") também já foi sugerida.
+            </p>
+            <p>
+                Sahyun (em árabe: صهيون, Ṣahyūn ou Ṣihyūn) é a palavra para "Sião" em árabe e em siríaco. Um vale chamado "Wâdi Sahyûn" (uádi significa "vale") aparentemente preserva o nome original e está localizado a aproximadamente três quilômetros do Portão de Jaffa da Cidade Velha.
+            </p>
+            <p>
+                A frase "Har Tzion" aparece nove vezes na Bíblia judaica, mas escrita com um tsade e não um zayin.
+            </p>
+
+
+
+            <h2 id="historia">História</h2>
+            <p>
+                De acordo com o relato em II Samuel (II Samuel 5:7), depois de conquistar a "fortaleza de Sião", David construiu ali seu palácio e a Cidade de David. O local foi mencionado também em Isaías 60:14, nos Salmos e em I Macabeus (ca. século II a.C.).
+            </p>
+            <p>
+                Depois da conquista da cidade jebusita, o monte da Cidade Baixa foi dividido em diversas partes. A mais alta, ao norte, tornou-se o local onde estava o Templo de Salomão. Com base em escavações arqueológicas que revelaram seções da muralha deste primeiro templo, acredita-se que ali era de fato o antigo Monte Sião.
+            </p>
+            <p>
+                No final do período do Primeiro Templo, Jerusalém se expandiu para o oeste. Pouco antes da conquista romana de Jerusalém e da destruição do Segundo Templo, Josefo descreveu o Monte Sião como uma colina do outro lado do vale para o oeste.[9] Assim, a colina ocidental que se estendia pelo sul da Cidade Velha acabou sendo conhecida como "Monte Sião" e assim permanece desde então. No final do período romano, uma sinagoga foi construída na entrada da estrutura conhecida como "Túmulo de Davi", provavelmente por causa da crença de que Davi teria trazido a Arca da Aliança até ali vinda de Bete-Semes e Quiriate-Jearim antes da construção do Templo.
+            </p>
+            <p>
+                Em 1948, o Monte Sião foi ligado ao bairro de Yemin Moshe, em Jerusalém Ocidental, através de um túnel estreito. Durante a guerra da independência, uma forma alternativa para evacuar feridos e transportar suprimentos aos soldados que estavam no alto do monte se fez necessária. Um teleférico capaz de carregar 250 kg foi instalado e era operado apenas à noite para evitar ser detectado. O aparelho ainda existe e está no Hotel Monte Sião.
+            </p>
+            <p>
+                Entre 1948 e 1967, quando a Cidade Velha esteve sob ocupação jordaniana, aos israelenses foi negada a permissão de irem até seus lugares santos. O Monte Sião foi designado uma terra de ninguém entre Israel e Jordânia.[14] O monte era o local mais próximo do local do antigo Templo de Jerusalém ainda acessível aos israelenses. Até a reconquista de Jerusalém Oriental durante a Guerra dos Seis Dias, os israelenses subiam no teto do Túmulo de Davi para orar.
+            </p>
+            <p>
+                A sinuosa estrada que leva ao topo do Monte Sião é conhecida como "Caminho do Papa" ("Derekh Ha'apifyor") e foi pavimentada em homenagem às históricas visitas a Jerusalém pelo papa Paulo VI em 1964.
+            </p>
+
+
+
+            <h2 id="pontos-turisticos">Pontos turísticos</h2>
+            <p>
+                Entre os mais importantes estão a Abadia da Dormição, o Túmulo de Davi e a Sala da Última Ceia. A maior parte dos historiadores e arqueologistas não acreditam que o "Túmulo de Davi" seja de fato o local onde estaria enterrado o rei Davi. A Câmara do Holocausto ("Martef HaShoah"), a precursora do Yad Vashem, também está no Monte Sião, assim como o cemitério protestante onde Oscar Schindler, um "justo entre as nações" que salvou mais de 1 200 judeus durante o Holocausto, está enterrado.
+            </p>
+
+
+
+
+
+            <h2 id="arqueologia">Arqueologia</h2>
+            <p>
+                Em 1874, o britânico Henry Maudsley descobriu uma grande seção de rochas e diversos grandes tijolos de pedra no Monte Sião que, acredita-se, formavam a base da "Primeira Muralha" citada por Josefo. Muitas delas haviam sido utilizadas para construir uma murada de contenção à volta do portão principal da escola do bispo Gobat (local que depois ficou conhecido como "Instituto Americano para Estudos da Terra Santa" e a "Universidade de Jerusalém").
+            </p>
+
+
+            <h2 id="ver-tambem">Ver também</h2>
             <ul>
-                <li><a href="#">Âncoras</a></li>
+                <li>Sião</li>
+                <li>Portão de Sião</li>
             </ul>
-        </div>
-    </div>
 
-    <div class="footer">
+
+
+
+            <h2 id="referencia">Referências</h2>
+            <ol>
+                <li>The Significance of Jerusalem: A Jewish Perspective</li>
+                <li>This is Jerusalem, Menashe Harel, Canaan Publishing, Jerusalem, 1977, pp.194-195</li>
+                <li> Terry R. Briley (2000). Isaiah, Volume 1 - The College Press NIV commentary: Old Testament series. [S.l.]: College Press. p. 49. ISBN 978-0-89900-890-5</li>
+                <li>Tremper Longman, Peter Enns (2008). Tremper Longman, Peter Enns, ed. Dictionary of the Old Testament: wisdom, poetry & writings, Volume 3 Illustrated ed. [S.l.]: InterVarsity Press. p. 936. ISBN 978-0-8308-1783-2</li>
+                <li>Geoffrey W. Bromiley (1982). Geoffrey W. Bromiley, ed. International Standard Bible Encyclopedia: E-J Volume 2 Revised ed. [S.l.]: Wm. B. Eerdmans Publishing. p. 1006. ISBN 978-0-8028-3782-0</li>
+                <li> Palestine Exploration Fund (1977). Palestine exploration quarterly. [S.l.]: Published at the Fund's Office. p. 21</li>
+                <li>The Responsa Project: Version 13, Bar Ilan University, 2005</li>
+            </ol>
+
+        </main>
 
     </div>
+   
+
+    <footer class="container">
+        <p>Esta página foi editada pela última vez às 22h59min de 01 de Setembro de 2023.</p>
+        <p>Este texto é disponibilizado nos termos da licença <a href="https://creativecommons.org/licenses/by-sa/4.0/deed.pt"> Atribuição-CompartilhaIgual 4.0 Internacional
+            (CC BY-SA 4.0) da Creative Commons</a>; pode estar sujeito a condições adicionais. Para mais detalhes,
+          consulte as condições de utilização.</p>
+        <nav>
+            <ul>
+                <li><a href="https://foundation.wikimedia.org/wiki/Policy:Privacy_policy" target="_blank">Política de privacidade</a></li>
+                <li><a href="https://pt.wikipedia.org/wiki/Wikip%C3%A9dia:Sobre_a_Wikip%C3%A9dia" target="_blank">Sobre myWikipédia</a></li>
+                <li><a href="https://pt.wikipedia.org/wiki/Wikip%C3%A9dia:Aviso_geral" target="_blank">Avisos Gerais</a></li>
+                <li><a href="https://foundation.wikimedia.org/wiki/Policy:Universal_Code_of_Conduct" target="_blank">Código de conduta</a></li>
+                <li><a href="#">Programadores</a></li>
+                <li><a href="#">Estatisticas</a></li>
+            </ul>
+        </nav>
+    </footer>
+
+
+    <script>
+        const menu = document.querySelector(".menu");
+        const menuItems = document.querySelectorAll(".menu-item");
+        const hamburger = document.querySelector('.hamburger');
+        const closeIcon = document.querySelector('.closeIcon');
+        const menuIcon = document.querySelector('.menuIcon');
+
+        function toggleMenu(){
+            if(menu.classList.contains("showMenu")){
+                menu.classList.remove("showMenu");
+                closeIcon.style.display = 'none';
+                menuIcon.style.display = 'block';
+                hamburger.setAttribute('aria-expanded', false);
+            }else{
+                menu.classList.add("showMenu");
+                closeIcon.style.display = 'block';
+                menuIcon.style.display = 'none';
+                hamburger.setAttribute('aria-expanded', true);
+            }
+        }
+
+        hamburger.addEventListener("click", toggleMenu);
+    </script>
+
+
 </body>
 </html>
